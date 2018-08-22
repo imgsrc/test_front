@@ -1,8 +1,9 @@
 {
-  "name": "test1",
+  "name": "test_front",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "material-components-web": "^0.38.2",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-scripts": "1.1.4"
@@ -10,7 +11,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
 }
