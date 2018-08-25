@@ -1,9 +1,23 @@
 .header-table {
-    margin-bottom: 40px;
-    &__title {
-        font-family: Roboto, sans-serif;
-        font-size: 1.8rem;
-        color: #444;
-        font-weight: 400;
-    }
+  margin-bottom: 40px;
+  &__title {
+    font-family: Roboto, sans-serif;
+    font-size: 1.8rem;
+    color: #444;
+    font-weight: 500;
+  }
+}
+
+.mdc-button:not(:disabled) {
+  background-color: #6c5;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+.mdc-button:active {
+  color: #fff;
+}
+.mdc-button::before,
+.mdc-button::after {
+  background-color: #6c5;
 }

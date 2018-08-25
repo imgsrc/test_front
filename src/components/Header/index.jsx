@@ -7,7 +7,7 @@ export default function Header() {
   return (
       <header className="header-table">
         <h1 className="header-table__title">Requests</h1>
-        <button className="mdc-button mdc-button--raised">Add new</button>
+        <button className="mdc-button">Add new</button>
       </header>
   );
 }
