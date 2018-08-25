@@ -1,8 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import { render } from 'react-dom'
+import 'material-components-web/material-components-web.scss'
 
-import 'material-components-web/dist/material-components-web.css';
+import App from './App'
 
-import App from './App';
-
-ReactDOM.render(<App />, document.getElementById('root'));
+render(<App/>, document.getElementById('root'));
