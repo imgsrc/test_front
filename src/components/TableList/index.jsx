@@ -1,29 +1,28 @@
 import React from 'react'
 import Table from '@material-ui/core/Table'
-import TableBody from '@material-ui/core/TableBody'
-import TableHead from '@material-ui/core/TableHead'
-import TableCell from '@material-ui/core/TableCell'
-import TableRow from '@material-ui/core/TableRow'
+
+import './index.css'
 
 export default function TableList() {
   return (
-      <Table>
-        <TableHead>
-          <TableRow>
-            <TableCell>Price</TableCell>
-            <TableCell>Id</TableCell>
-            <TableCell>From/Until</TableCell>
-            <TableCell>Passengers</TableCell>
-          </TableRow>
-        </TableHead>
+      <Table className="table">
+        <thead className="table-head">
+        <tr>
+          <th className="table-head__item">Price</th>
+          <th className="table-head__item">Id</th>
+          <th className="table-head__item">From/Until</th>
+          <th className="table-head__item">Passengers</th>
+        </tr>
+        </thead>
 
-        <TableBody>
-          <TableRow>
-            <TableCell>123</TableCell>
-            <TableCell>456</TableCell>
-            <TableCell>789</TableCell>
-          </TableRow>
-        </TableBody>
+        <tbody className="table-body">
+        <tr>
+          <td className="table-body__item"></td>
+          <td className="table-body__item"></td>
+          <td className="table-body__item"></td>
+          <td className="table-body__item"></td>
+        </tr>
+        </tbody>
       </Table>
   );
 }

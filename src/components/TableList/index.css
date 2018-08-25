@@ -1,0 +1,8 @@
+.table-head {
+  background-color: #ddd; }
+  .table-head tr {
+    height: 36px; }
+  .table-head .table-head__item {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #444; }

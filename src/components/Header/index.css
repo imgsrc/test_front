@@ -1,0 +1,7 @@
+.header-table {
+  margin-bottom: 25px; }
+  .header-table__title {
+    font-family: Roboto, sans-serif;
+    font-size: 1.8rem;
+    color: #444;
+    font-weight: 400; }
