@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './App.css'
+import './App.scss'
 import TableList from './components/TableList'
 
 export default function App() {
