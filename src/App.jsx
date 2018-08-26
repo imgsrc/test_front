@@ -1,14 +1,19 @@
 import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+
+import data from './db'
+import RequestsList from './pages/RequestsList'
+import CreateRequest from './pages/CreateRequest'
 
 import './App.css'
-import TableList from './components/TableList'
-import Header from './components/Header'
 
 export default function App() {
   return (
-      <div className="app">
-        <Header/>
-        <TableList/>
-      </div>
+      <Router>
+        <div className="app">
+          <Route exact path="/" component={RequestsList}/>
+          <Route path="/create" component={CreateRequest}/>
+        </div>
+      </Router>
   );
 }
