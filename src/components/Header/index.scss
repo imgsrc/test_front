@@ -1,9 +1,8 @@
 .header-table {
-  margin-bottom: 40px;
+  margin: 40px 0;
   &__title {
     font-family: Roboto, sans-serif;
-    font-size: 1.8rem;
-    color: #444;
+    font-size: 1.6rem;
     font-weight: 500;
   }
 }
@@ -14,9 +13,7 @@
   border-radius: 5px;
   padding: 5px 15px;
 }
-.mdc-button:active {
-  color: #fff;
-}
+
 .mdc-button::before,
 .mdc-button::after {
   background-color: #6c5;

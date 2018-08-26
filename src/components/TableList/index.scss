@@ -1,11 +1,15 @@
 .table-head {
   background-color: #ddd;
   tr {
-    height: 36px;
+    height: 46px;
   }
   .table-head__item {
     font-size: 1rem;
     font-weight: 600;
-    color: #444;
   }
+}
+.table-body__item {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 15px;
 }
