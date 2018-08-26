@@ -1,21 +1,5 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
-
-const styles = theme => ({
-  container: {
-    display: 'flex',
-    flexWrap: 'wrap',
-  },
-  textField: {
-    marginLeft: theme.spacing.unit,
-    marginRight: theme.spacing.unit,
-    width: 200,
-  },
-  menu: {
-    width: 200,
-  },
-});
 
 const currencies = [
   {
@@ -36,7 +20,7 @@ const currencies = [
   },
 ];
 
-class InputField extends React.Component {
+export default class InputField extends React.Component {
   state = {
     name: 'Cat in the Hat',
     age: '',
@@ -51,22 +35,18 @@ class InputField extends React.Component {
   };
 
   render() {
-    const { classes } = this.props;
+    const { label } = this.props;
 
     return (
-        <form className={classes.container} noValidate autoComplete="off">
-          <TextField
-              id="full-width"
-              label="Label"
-              InputLabelProps={{
-                shrink: true,
-              }}
-              fullWidth
-              margin="normal"
-          />
-        </form>
+        <TextField
+            id="full-width"
+            label={ label }
+            InputLabelProps={ {
+              shrink: true,
+            } }
+            fullWidth
+            margin="normal"
+        />
     );
   }
 }
-
-export default withStyles(styles)(InputField);
